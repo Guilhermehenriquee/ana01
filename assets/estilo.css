@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    transition: 3000ms linear;
+}
+
+.container{
+    transition: 1000ms;
+}
+
+
+h1, h2, h3, button, a{
+    font-family: 'Comic Neue', cursive;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+}
+
+.invisivel{
+    display: none;
+}
+.visivel{
+    display: block;
+}
+
+.letra2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.7em;
+    font-weight: 400;
+    padding: auto 30px auto 30px;
+}
+
+.letra-vermelha{
+    background: -webkit-linear-gradient(#f857a6, #ff5858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5, .fundo6, .fundo7{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fundo1{
+    background-image: url('../imagens/fundo1.jpg');   
+}
+.fundo2{
+    background-image: url('../imagens/fundo2.gif');
+}
+.fundo3{
+    background-image: url('../imagens/fundo3.gif');
+}
+.fundo4{
+    background-image: url('../imagens/fundo4.jpg');
+}
+.fundo5{
+    background-image: url('../imagens/fundo5.gif');
+}
+.fundo6{
+    background-image: url('../imagens/fundo9.gif');
+}
+.fundo7{
+    background-image: url('../imagens/fundo7.gif');
+}
+.fundo10{
+    background-color: #111;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.tela:not(.visivel){
+    display: none;
+}
+
+.tela img:not(.custom){
+    width: 100%;
+    margin: 10px auto 15px auto;
+}
+
+.tela{
+    background-color: #FFF;
+    padding: 50px 30px;
+    border-radius: 10px;
+    color: #555;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 10%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.tela-centro{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 0;
+    width: 90%;
+    text-align: center;
+    padding: auto 30px auto 30px;
+}
+
+.btn-block{
+    width: 100%;
+}
+
+.btn-verde {background-image: linear-gradient(to right, #50C9C3 0%, #96DEDA  51%, #50C9C3  100%)}
+.btn-verde {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   
+   border: none;
+ }
+
+ 
+ .btn-vermelho {background-image: linear-gradient(to right, #CB356B 0%, #BD3F32  51%, #CB356B  100%)}
+ .btn-vermelho {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    
+    border: none;
+  }
+
+  
+  .btn-rosa {background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%)}
+  .btn-rosa {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     border: none;
+   }
+  
+   
+   
+   .btn-azul {background-image: linear-gradient(to right, #36D1DC 0%, #5B86E5  51%, #36D1DC  100%)}
+   .btn-azul {
+      margin: 10px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      border: none
+    }
+   
+ 
+.calendario{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.calendario tbody{
+    text-align: center;
+    color: #CCC;
+}
+.calendario thead{
+    font-size: 0.5em;
+    font-weight: 700;
+}
+.calendario .marcado{
+    color: #FFF;
+    background-color: #36D1DC;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pop-up{
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 500;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px grey;
+    padding: 30px 20px 20px 20px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 90%;
+    max-width: 500px;
+    top: 20%;
+}
+.pop-up h1, .pop-up button{
+    text-align: center;
+}
